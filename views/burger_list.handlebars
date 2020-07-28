@@ -2,6 +2,7 @@
         <div class="row">
             <div class="col">
                 <!-- available  -->
+                <h3 style="color: blue;">Burgers Available</h3>
                 {{#each available}}
                 <div class="btn-toolbar mb-3">
                     <div class="input-group-text">{{burger_name}}</div>
@@ -15,6 +16,7 @@
             </div>
             <div class="col">
                 <!-- devoured burgers -->
+                <h3 style="color: red;">Burgers Eaten</h3>
                 {{#each devoured}}
                 <div class="alert alert-secondary">
                     {{burger_name}}
