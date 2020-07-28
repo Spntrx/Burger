@@ -27,9 +27,9 @@ class Database {
 const db = new Database({
   host: "localhost",
   port: 3306,
-  user: "root",
-  password: "Avinash711",
-  database: "burgers_db",
+  user: process.env.DB_USER
+  password: process.env.DB_PWD
+  database: process.env.DB_NAME
   insecureAuth : true
 });
 
